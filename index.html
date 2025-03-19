@@ -1,24 +1,11 @@
-const fetch = require("node-fetch");
-const RSS = require("rss");
-
-exports.handler = async () => {
-    const feed = new RSS({
-        title: "Meu Feed RSS",
-        description: "Últimas notícias",
-        feed_url: "https://seu-site.netlify.app/.netlify/functions/rss",
-        site_url: "https://www.globo.com/"
-    });
-
-    feed.item({
-        title: "Notícia Exemplo",
-        description: "Descrição da notícia",
-        url: "https://www.globo.com/noticia-exemplo",
-        date: new Date()
-    });
-
-    return {
-        statusCode: 200,
-        headers: { "Content-Type": "application/xml" },
-        body: feed.xml()
-    };
-};
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RSS Generator</title>
+</head>
+<body>
+    <h1>RSS Generator está rodando no Netlify!</h1>
+</body>
+</html>
