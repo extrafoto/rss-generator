@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "rss": "^1.2.2",
+    "node-fetch": "^3.3.1"
+  }
+}
