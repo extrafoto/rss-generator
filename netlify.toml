@@ -1,6 +1,6 @@
 [build]
 functions = "netlify/functions"
-command = ""  # Não há necessidade de build
+command = ""  # Deixar vazio porque não há necessidade de build
 
 [functions]
 node_bundler = "esbuild"
