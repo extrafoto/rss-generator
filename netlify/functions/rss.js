@@ -1,10 +1,9 @@
-const fetch = require("node-fetch");
 const RSS = require("rss");
 
 exports.handler = async () => {
     const feed = new RSS({
         title: "Meu Feed RSS",
-        description: "Últimas notícias do Globo",
+        description: "Últimas notícias",
         feed_url: "https://seu-site.netlify.app/.netlify/functions/rss",
         site_url: "https://www.globo.com/"
     });
@@ -22,4 +21,3 @@ exports.handler = async () => {
         body: feed.xml()
     };
 };
-
