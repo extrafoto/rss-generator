@@ -1,6 +1,9 @@
 [build]
 functions = "netlify/functions"
-command = ""  # Deixar vazio porque não há necessidade de build
+command = "npm install"
 
 [functions]
 node_bundler = "esbuild"
+
+[[plugins]]
+package = "@netlify/plugin-functions-install-core"
